@@ -1,4 +1,4 @@
-package functionalinterfaces;
+package functionalinterfaces.greet;
 
 @FunctionalInterface
 public interface Greet {

@@ -1,6 +1,8 @@
-package functionalinterfaces;
+package functionalinterfaces.greet;
 
-public class GreetClass implements Greet{
+import functionalinterfaces.greet.Greet;
+
+public class GreetClass implements Greet {
     @Override
     public void greet(String message) {
         System.out.println("Hi There, " + message + ".");
