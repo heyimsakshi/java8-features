@@ -33,16 +33,19 @@ public class OptionalClassDemo {
 
         System.out.println(optionalStudent.orElseThrow(() -> new RuntimeException("Student Object Is Null")));
 
+        /* Other Methods: */
+
         //empty():
         Optional<Integer> id = Optional.empty();
         System.out.println("Optional: " + id);
         System.out.println("Has value: " + id.isPresent());
 
         //of():
-        Integer enrollment = 1212121;
+        Integer enrollment = 121212;
         Optional<Integer> optionalInteger = Optional.of(enrollment);
         System.out.println(optionalInteger.isPresent());
-        System.out.println(optionalInteger.get());
+//        System.out.println(optionalInteger.get());
+        System.out.println(optionalInteger.orElse(111111));
 
     }
 }
