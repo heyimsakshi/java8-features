@@ -6,8 +6,8 @@ public class OptionalClassDemo {
     public static void main(String[] args) {
 
         //With Data Types:
-        String name = null;
-        String message = "Good Morning";
+        //String name = null;
+        //String message = "Good Morning";
 
 
         Optional<String> optionalSting = Optional.ofNullable(name);
@@ -37,8 +37,8 @@ public class OptionalClassDemo {
 
         //empty():
         Optional<Integer> id = Optional.empty();
-        System.out.println("Optional: " + id);
-        System.out.println("Has value: " + id.isPresent());
+       // System.out.println("Optional: " + id);
+     //   System.out.println("Has value: " + id.isPresent());
 
         //of():
         Integer enrollment = 121212;
